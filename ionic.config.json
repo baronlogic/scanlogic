@@ -1,0 +1,7 @@
+{
+  "name": "scanlogic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
