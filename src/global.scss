@@ -24,3 +24,73 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+$shocklogic-font: 'Montserrat', sans-serif;
+$shocklogic-orange: #FD814C;
+$shocklogic-dark: #222327;
+$shocklogic-light: whitesmoke;
+
+html, body { height: 100%; color: $shocklogic-orange; }
+
+body { margin: 0; background-color: $shocklogic-light; color: $shocklogic-orange; }
+
+.header{ flex: 0 0 auto; }
+.content{ flex: 1 1 auto; overflow-y: auto; }
+.footer{ flex: 0 0 auto; }
+
+.shocklogic-font{ font-family: $shocklogic-font; }
+.shocklogic-orange{ color: $shocklogic-orange; }
+.shocklogic-dark{ color: $shocklogic-dark; }
+
+.spacer { flex: 1 1 auto; }
+.btn-none { width: 40px; height: 40px; }
+
+.ml--15{ margin-left: -15px !important; }
+.mr--15{ margin-right: -15px !important; }
+
+mat-form-field.mat-form-field {
+    font-size: 14px;
+    font-family: $shocklogic-font;
+    width: 250px;
+    color: $shocklogic-dark;
+}
+
+mat-toolbar{ background-color: white !important; font-family: $shocklogic-font !important; }
+
+.header mat-toolbar{ box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2); margin-bottom: 2px !important; }
+
+.mat-snack-bar-container{ background-color: white; color: $shocklogic-dark; }
+
+.mat-simple-snackbar, .mat-button-wrapper{ font-family: $shocklogic-font; font-size: smaller; }
+
+.width-100{ width: 100%; }
+.height-100{ height: 100%; }
+.text-center{ text-align: center; }
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+  }
